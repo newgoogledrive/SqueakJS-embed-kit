@@ -11,14 +11,14 @@ squeak-embed-kit/
 │
 ├─ example.html
 ├─ README.md
-├─ images/
-│   └─ YourImage.image
 └─ squeakjs/
-    ├─ squeak.js
-    └─ run/
-        ├─ index.html
-        ├─ squeak.css
-        └─ SqueakJS-logo.png
+├─ squeak.js
+├─ images/
+│ └─ example.image
+└─ run/
+├─ index.html
+├─ squeak.css
+└─ SqueakJS-logo.png
 ```
 
 ---
