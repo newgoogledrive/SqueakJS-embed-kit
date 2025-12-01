@@ -1,16 +1,15 @@
 {
-  "name": "squeakjs-embed-kit",
+  "name": "@NewGoogleDrive/squeakjs-embed-kit",
   "version": "1.1.0",
   "description": "Easily embed SqueakJS in your website.",
   "main": "index.html",
   "files": [
     "squeakjs",
     "index.html"
-  "publishConfig": {
-  "registry": "https://npm.pkg.github.com/"
-}
-
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "keywords": [
     "squeakjs",
     "embed",
