@@ -3,7 +3,7 @@ name: Publish Package
 on:
   push:
     tags:
-      - 'v1.1.0' # Only runs on version tags like v1.1.0
+      - 'v*.*.*' # Only runs on version tags like v1.1.0
 
 jobs:
   publish:
