@@ -1,0 +1,25 @@
+name: Publish Package
+
+on:
+  push:
+    tags:
+      - 'v1.1.1' # Only runs on version tags like v1.1.0
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write   # Needed to publish packages
+    steps:
+      - uses: actions/checkout@v3
+
+      # Authenticate to GitHub Packages using the default GITHUB_TOKEN
+      - name: Authenticate to GitHub Packages
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Publish package
+        run: npm publish --registry=https://npm.pkg.github.com
