@@ -8,7 +8,7 @@
     "index.html"
   ],
   "publishConfig": {
-    "newgoogledrive:registry": "https://npm.pkg.github.com/"
+    "@newgoogledrive:registry": "https://npm.pkg.github.com/"
   },
   "keywords": [
     "squeakjs",
